@@ -9,30 +9,33 @@ xhr.onreadystatechange = function () {
     let tableRow = document.getElementsByTagName("tbody")[0];
   
 
-for (const user of obj) {
-    let tr = document.createElement("tr");
-    tableRow.appendChild(tr);
-    console.log(user.id);
-
-    let tdName = document.createElement("td");
-    tr.appendChild(tdName);
-    tdName.innerHTML = user.name;
-    
-    let tdUsername = document.createElement("td");
-    tr.appendChild(tdUsername);
-    tdUsername.innerHTML = user.username;
-    
-    let tdEmail = document.createElement("td");
-    tr.appendChild(tdEmail);
-    tdEmail.innerHTML = user.email;
-    
-    let tdPhone = document.createElement("td");
-    tr.appendChild(tdPhone);
-    tdPhone.innerHTML = user.phone;
-    
-    let tdWeb = document.createElement("td");
-    tr.appendChild(tdWeb);
-    tdWeb.innerHTML = user.website;
-   }
+    for (const user of obj) {
+      let tr = document.createElement("tr");
+      tableRow.appendChild(tr);
+      
+      let tdId = document.createElement("td");
+      tr.appendChild(tdId);
+      tdId.innerHTML = user.id;
+      
+      let tdName = document.createElement("td");
+      tr.appendChild(tdName);
+      tdName.innerHTML = user.name;
+      
+      let tdUsername = document.createElement("td");
+      tr.appendChild(tdUsername);
+      tdUsername.innerHTML = user.username;
+      
+      let tdEmail = document.createElement("td");
+      tr.appendChild(tdEmail);
+      tdEmail.innerHTML = user.email;
+      
+      let tdPhone = document.createElement("td");
+      tr.appendChild(tdPhone);
+      tdPhone.innerHTML = user.phone;
+      
+      let tdWeb = document.createElement("td");
+      tr.appendChild(tdWeb);
+      tdWeb.innerHTML = user.website;
+     }
   }
 }
